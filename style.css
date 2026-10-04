@@ -637,6 +637,31 @@ body {
     gap: 12px;
     color: var(--text-beige);
 }
+.card-action-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    border-top: 1px solid rgba(208, 230, 253, 0.15);
+    padding-top: 10px;
+}
+
+.link-web {
+    color: var(--text-beige);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s;
+}
+
+.link-web:hover {
+    color: var(--accent-blue);
+    text-decoration: underline;
+}
+
 
 /* Modal Popup Styling */
 .modal-overlay {
