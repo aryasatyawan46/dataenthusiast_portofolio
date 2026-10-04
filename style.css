@@ -1,7 +1,7 @@
 :root {
-    --bg-main: #162660;          /* Royal Blue */
-    --accent-blue: #D0E6FD;      /* Powder Blue */
-    --text-beige: #F1E4D1;       /* Warm Beige */
+    --bg-main: #162660;
+    --accent-blue: #D0E6FD;
+    --text-beige: #F1E4D1;
     --text-primary: #F1E4D1;
     --text-muted: #D0E6FD;
     --primary: #D0E6FD;
@@ -33,7 +33,7 @@ body {
     position: relative;
 }
 
-/* Floating Dock (Menu Samping Kiri) */
+/* Floating Dock */
 .floating-dock {
     position: fixed;
     left: 45px;
@@ -70,7 +70,6 @@ body {
     box-shadow: 0 0 15px var(--primary-glow);
 }
 
-/* Content Container */
 .content-container {
     flex: 1;
     margin-left: 90px;
@@ -188,7 +187,6 @@ body {
 .btn-primary:hover {
     background: #ffffff;
     transform: translateY(-2px);
-    box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
 }
 
 .btn-secondary {
@@ -200,8 +198,6 @@ body {
 .btn-secondary:hover {
     border-color: var(--accent-blue);
     color: var(--accent-blue);
-    background: rgba(208, 230, 253, 0.05);
-    transform: translateY(-2px);
 }
 
 /* ABOUT ME SECTION */
@@ -312,7 +308,6 @@ body {
     border-color: var(--text-beige);
     transform: translateY(-3px);
     background: rgba(208, 230, 253, 0.1);
-    box-shadow: 0 0 15px var(--primary-glow);
 }
 
 .software-card::after {
@@ -400,7 +395,7 @@ body {
     color: var(--bg-main);
 }
 
-/* EXPERIENCE & TIMELINE (Dengan slot foto dokumentasi) */
+/* EXPERIENCE & TIMELINE */
 .experience-category-title {
     font-size: 1.25rem;
     font-weight: 700;
@@ -408,7 +403,6 @@ body {
     margin-bottom: 25px;
     border-left: 4px solid var(--accent-blue);
     padding-left: 12px;
-    letter-spacing: 0.5px;
 }
 
 .timeline-container {
@@ -448,7 +442,6 @@ body {
     border-radius: 16px;
     padding: 25px;
     backdrop-filter: blur(12px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     display: grid;
     grid-template-columns: 1.3fr 0.9fr;
     gap: 25px;
@@ -493,7 +486,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
 }
 
 .timeline-photo-slot img {
@@ -509,10 +501,6 @@ body {
     gap: 8px;
     color: var(--accent-blue);
     font-size: 0.78rem;
-}
-
-.fallback-slot i {
-    font-size: 1.8rem;
 }
 
 /* Section Header */
@@ -542,10 +530,9 @@ body {
     background: var(--accent-blue);
     margin: 10px auto 0 auto;
     border-radius: 2px;
-    box-shadow: 0 0 10px var(--primary-glow);
 }
 
-/* Portfolio Grid */
+/* Portfolio Grid (Dengan Gambar Home Preview) */
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -560,6 +547,7 @@ body {
     display: flex;
     flex-direction: column;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .portfolio-card:hover {
@@ -568,8 +556,31 @@ body {
     box-shadow: 0 10px 25px var(--primary-glow);
 }
 
-.portfolio-preview {
-    height: 140px;
+.portfolio-preview-img {
+    width: 100%;
+    height: 160px;
+    background: rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(208, 230, 253, 0.15);
+}
+
+.portfolio-preview-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.portfolio-card:hover .portfolio-preview-img img {
+    transform: scale(1.05);
+}
+
+.fallback-preview {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -608,41 +619,110 @@ body {
 .portfolio-info p {
     color: var(--accent-blue);
     font-size: 0.88rem;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     line-height: 1.5;
 }
 
-.confidential-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 0.75rem;
-    color: #fca5a5;
-    background: rgba(239, 68, 68, 0.1);
-    padding: 6px 10px;
-    border-radius: 6px;
-    border: 1px solid rgba(239, 68, 68, 0.2);
-    margin-top: 10px;
-}
-
-.link-arrow {
+.click-detail {
     color: var(--accent-blue);
-    text-decoration: none;
     font-weight: 600;
     font-size: 0.9rem;
     display: inline-flex;
     align-items: center;
     gap: 8px;
     transition: gap 0.3s;
-    margin-top: 10px;
 }
 
-.link-arrow:hover {
+.portfolio-card:hover .click-detail {
     gap: 12px;
     color: var(--text-beige);
 }
 
-/* Certifikasi Modern */
+/* Modal Popup Styling */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(6, 9, 19, 0.85);
+    backdrop-filter: blur(8px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    padding: 20px;
+}
+
+.modal-content {
+    background: #0f172a;
+    border: 1px solid rgba(208, 230, 253, 0.3);
+    border-radius: 20px;
+    max-width: 650px;
+    width: 100%;
+    padding: 35px;
+    position: relative;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    animation: modalPop 0.3s ease;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+@keyframes modalPop {
+    0% { transform: scale(0.9); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(208, 230, 253, 0.2);
+    color: var(--accent-blue);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.modal-close:hover {
+    background: var(--accent-blue);
+    color: #162660;
+}
+
+.modal-desc {
+    color: var(--accent-blue);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 15px 0 20px 0;
+}
+
+.modal-features h4 {
+    color: var(--text-beige);
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.modal-features ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.modal-features li {
+    font-size: 0.9rem;
+    color: var(--accent-blue);
+    line-height: 1.5;
+}
+
+/* Certifikasi & Kontak */
 .cert-box-modern {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(208, 230, 253, 0.2);
@@ -669,19 +749,9 @@ body {
     font-size: 0.9rem;
 }
 
-/* Contact Section */
-.text-center {
-    text-align: center;
-}
-
-.content-section.text-center p {
-    margin: 10px auto 25px auto;
-    color: var(--accent-blue);
-}
-
-.content-section h2 {
-    color: var(--text-beige);
-}
+.text-center { text-align: center; }
+.content-section.text-center p { margin: 10px auto 25px auto; color: var(--accent-blue); }
+.content-section h2 { color: var(--text-beige); }
 
 .contact-links {
     display: flex;
@@ -710,40 +780,17 @@ body {
     background: rgba(208, 230, 253, 0.08);
 }
 
-.footer-note {
-    color: var(--accent-blue);
-    font-size: 0.85rem;
-}
+.footer-note { color: var(--accent-blue); font-size: 0.85rem; }
 
-/* Responsif Mobile */
 @media (max-width: 900px) {
-    .content-container {
-        margin-left: 0;
-        margin-bottom: 80px;
-    }
-    .main-wrapper {
-        flex-direction: column;
-        padding: 15px;
-    }
+    .content-container { margin-left: 0; margin-bottom: 80px; }
+    .main-wrapper { flex-direction: column; padding: 15px; }
     .floating-dock {
-        position: fixed;
-        bottom: 20px;
-        left: 50%;
-        top: auto;
-        transform: translateX(-50%);
-        flex-direction: row;
-        width: 90%;
-        max-width: 400px;
-        justify-content: space-around;
-        padding: 10px;
+        position: fixed; bottom: 20px; left: 50%; top: auto;
+        transform: translateX(-50%); flex-direction: row; width: 90%;
+        max-width: 400px; justify-content: space-around; padding: 10px;
     }
-    .about-section-layout {
-        grid-template-columns: 1fr;
-    }
-    .timeline-card-split {
-        grid-template-columns: 1fr;
-    }
-    .hero-massive-title {
-        font-size: 4rem;
-    }
+    .about-section-layout { grid-template-columns: 1fr; }
+    .timeline-card-split { grid-template-columns: 1fr; }
+    .hero-massive-title { font-size: 4rem; }
 }
