@@ -80,13 +80,12 @@ body {
     padding-bottom: 80px;
 }
 
-/* General Section Styling */
 .content-section {
     position: relative;
     padding-top: 20px;
 }
 
-/* HERO SECTION (Gaya Estetik Mewah Sesuai Referensi) */
+/* HERO SECTION */
 .hero-fullscreen {
     min-height: 85vh;
     display: flex;
@@ -304,12 +303,6 @@ body {
     cursor: pointer;
 }
 
-.software-card img {
-    width: 32px;
-    height: 32px;
-    object-fit: contain;
-}
-
 .software-card i {
     font-size: 1.6rem;
     color: var(--accent-blue);
@@ -322,7 +315,6 @@ body {
     box-shadow: 0 0 15px var(--primary-glow);
 }
 
-/* Tooltip */
 .software-card::after {
     content: attr(data-tooltip);
     position: absolute;
@@ -408,7 +400,7 @@ body {
     color: var(--bg-main);
 }
 
-/* EXPERIENCE & TIMELINE */
+/* EXPERIENCE & TIMELINE (Dengan slot foto dokumentasi) */
 .experience-category-title {
     font-size: 1.25rem;
     font-weight: 700;
@@ -497,24 +489,30 @@ body {
     border: 2px dashed rgba(208, 230, 253, 0.3);
     border-radius: 12px;
     background: rgba(208, 230, 253, 0.03);
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    color: var(--accent-blue);
-    text-align: center;
-    padding: 10px;
     transition: all 0.3s ease;
 }
 
-.timeline-photo-slot i {
-    font-size: 1.8rem;
-    color: var(--accent-blue);
+.timeline-photo-slot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.timeline-photo-slot span {
+.fallback-slot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent-blue);
     font-size: 0.78rem;
+}
+
+.fallback-slot i {
+    font-size: 1.8rem;
 }
 
 /* Section Header */
@@ -609,9 +607,22 @@ body {
 
 .portfolio-info p {
     color: var(--accent-blue);
-    font-size: 0.9rem;
-    margin-bottom: 20px;
+    font-size: 0.88rem;
+    margin-bottom: 12px;
     line-height: 1.5;
+}
+
+.confidential-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.75rem;
+    color: #fca5a5;
+    background: rgba(239, 68, 68, 0.1);
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    margin-top: 10px;
 }
 
 .link-arrow {
@@ -623,6 +634,7 @@ body {
     align-items: center;
     gap: 8px;
     transition: gap 0.3s;
+    margin-top: 10px;
 }
 
 .link-arrow:hover {
