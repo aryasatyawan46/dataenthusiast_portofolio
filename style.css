@@ -870,3 +870,10 @@ body {
     .timeline-card-split { grid-template-columns: 1fr; }
     .hero-massive-title { font-size: 4rem; }
 }
+
+/* Memberikan jarak spasi besar ke bawah untuk Section Contact */
+.contact-spaced-section {
+    margin-top: 140px;
+    padding-top: 60px;
+    border-top: 1px solid rgba(208, 230, 253, 0.15);
+}
