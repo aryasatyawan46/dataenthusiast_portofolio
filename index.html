@@ -381,7 +381,7 @@
                 </div>
             </section>
 
-            <!-- MODAL POPUP CONTAINER (Wajib di luar container utama agar terbaca JavaScript) -->
+           <!-- MODAL POPUP CONTAINER (Wajib ada di luar container utama) -->
     <div id="projectModal" class="modal-overlay" onclick="closeModalOutside(event)">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
@@ -389,34 +389,54 @@
         </div>
     </div>
 
-    <!-- Konten Modal 1: Dashboard Forecast Susut Energi -->
+    <!-- Konten Modal: Dashboard Forecast Susut Energi (6 Galeri Screenshot) -->
     <div id="modal-pln-forecast" style="display:none;">
         <span class="badge-tag">PLN Magang — R Shiny & R Studio</span>
         <h2>Dashboard Forecast Susut Energi</h2>
         
         <div class="detail-section-block">
-            <h4>Project Description</h4>
-            <p class="modal-desc">Sistem analitik berbasis R Shiny yang dirancang untuk menghitung dan memproyeksikan persentase susut energi listrik secara otomatis di 5 wilayah kerja PLN UP3 Surabaya Selatan[cite: 90].</p>
-        </div>
-        <div class="detail-section-block">
             <h4>Fungsi Utama</h4>
-            <p class="modal-desc">Mengotomatisasi proses peramalan komponen kWh dan persentase susut bulanan[cite: 101].</p>
-        </div>
-        <div class="detail-section-block">
-            <h4>Keunggulan Sistem</h4>
-            <ul class="modal-list">
-                <li>Seleksi model otomatis terbaik (ARIMA, FBPN, Hybrid STLF, SES) dengan MAPE 1-2%[cite: 90].</li>
-                <li>Menu panduan langkah-demi-langkah (1-7) dengan template Excel[cite: 49].</li>
-            </ul>
+            <p class="modal-desc">Menghitung otomatis persentase kehilangan (susut) energi listrik di 5 wilayah Surabaya Selatan (ULP NGAGEL, ULP RUNGKUT, ULP DARMO PERMAI, ULP GEDANGAN, ULP DUKUH KUPANG).</p>
         </div>
 
+        <div class="detail-section-block">
+            <h4>Keunggulan Sistem</h4>
+            <p class="modal-desc">Menggabungkan 4 data transaksi energi dan otomatis memilih metode prediksi dengan tingkat error paling kecil (hanya 1-2%).</p>
+        </div>
+
+        <div class="detail-section-block">
+            <h4>Tujuan</h4>
+            <p class="modal-desc">Menggantikan proses rekapitulasi data manual yang rumit menjadi sistem digital yang cepat dan terstandardisasi.</p>
+        </div>
+
+        <!-- 6 Galeri Screenshot -->
         <div class="modal-screenshots-container">
-            <h4>Project Screenshots & Visualizations (5 Spaces)</h4>
-            <div class="space-item"><div class="space-img-box"><img src="forecast-sc1.png" alt="SC1" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="fallback-txt"><i class="fa-solid fa-image"></i><span>Space 1 Image</span></div></div><p class="space-desc"><strong>Space 1:</strong> Halaman Panduan Penggunaan[cite: 49].</p></div>
-            <div class="space-item"><div class="space-img-box"><img src="forecast-sc2.png" alt="SC2" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="fallback-txt"><i class="fa-solid fa-image"></i><span>Space 2 Image</span></div></div><p class="space-desc"><strong>Space 2:</strong> Struktur Navigasi Sidebar[cite: 119].</p></div>
-            <div class="space-item"><div class="space-img-box"><img src="forecast-sc3.png" alt="SC3" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="fallback-txt"><i class="fa-solid fa-image"></i><span>Space 3 Image</span></div></div><p class="space-desc"><strong>Space 3:</strong> Halaman Input Data Excel[cite: 120].</p></div>
-            <div class="space-item"><div class="space-img-box"><img src="forecast-sc4.png" alt="SC4" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="fallback-txt"><i class="fa-solid fa-image"></i><span>Space 4 Image</span></div></div><p class="space-desc"><strong>Space 4:</strong> Pemilihan Model Terbaik[cite: 120].</p></div>
-            <div class="space-item"><div class="space-img-box"><img src="forecast-sc5.png" alt="SC5" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="fallback-txt"><i class="fa-solid fa-image"></i><span>Space 5 Image</span></div></div><p class="space-desc"><strong>Space 5:</strong> Grafik Forecast & Kalkulasi Susut[cite: 121, 122].</p></div>
+            <h4>Project Screenshots & Visualizations (6 Galeri)</h4>
+            
+            <div class="space-item">
+                <div class="space-img-box"><img src="forecast-sc1.png" alt="SC1" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="fallback-txt"><i class="fa-solid fa-image"></i><span>Galeri 1 Image</span></div></div>
+                <p class="space-desc"><strong>Galeri 1:</strong> Tampilan Halaman Panduan Penggunaan langkah 1-7.</p>
+            </div>
+            <div class="space-item">
+                <div class="space-img-box"><img src="forecast-sc2.png" alt="SC2" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="fallback-txt"><i class="fa-solid fa-image"></i><span>Galeri 2 Image</span></div></div>
+                <p class="space-desc"><strong>Galeri 2:</strong> Tampilan Struktur Navigasi Sidebar dan Filter Komponen.</p>
+            </div>
+            <div class="space-item">
+                <div class="space-img-box"><img src="forecast-sc3.png" alt="SC3" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="fallback-txt"><i class="fa-solid fa-image"></i><span>Galeri 3 Image</span></div></div>
+                <p class="space-desc"><strong>Galeri 3:</strong> Tampilan Halaman Input Data Excel dengan Tabel Interaktif.</p>
+            </div>
+            <div class="space-item">
+                <div class="space-img-box"><img src="forecast-sc4.png" alt="SC4" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="fallback-txt"><i class="fa-solid fa-image"></i><span>Galeri 4 Image</span></div></div>
+                <p class="space-desc"><strong>Galeri 4:</strong> Tampilan Halaman Pemilihan Model Terbaik dan Papan Peringkat Error.</p>
+            </div>
+            <div class="space-item">
+                <div class="space-img-box"><img src="forecast-sc5.png" alt="SC5" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="fallback-txt"><i class="fa-solid fa-image"></i><span>Galeri 5 Image</span></div></div>
+                <p class="space-desc"><strong>Galeri 5:</strong> Tampilan Halaman Grafik Forecast & Confidence Interval 95%.</p>
+            </div>
+            <div class="space-item">
+                <div class="space-img-box"><img src="forecast-sc6.png" alt="SC6" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="fallback-txt"><i class="fa-solid fa-image"></i><span>Galeri 6 Image</span></div></div>
+                <p class="space-desc"><strong>Galeri 6:</strong> Tampilan Halaman Hasil Forecast & Kalkulasi Persentase Susut.</p>
+            </div>
         </div>
     </div>
 
