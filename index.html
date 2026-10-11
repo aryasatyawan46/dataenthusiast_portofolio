@@ -257,11 +257,11 @@
                 </div>
             </section>
 
-           <!-- 4. PORTFOLIO / PROJECTS SECTION (Fokus 3 Proyek Magang PLN) -->
+            <!-- 4. PORTFOLIO / PROJECTS SECTION -->
             <section id="projects" class="content-section">
                 <div class="section-header">
                     <h2>My Portfolio</h2>
-                    <p>Klik pada kartu proyek untuk melihat rincian tugas khusus magang PLN dari laporan</p>
+                    <p>Klik pada kartu proyek untuk melihat gambaran website, screenshot hasil, fitur, dan software magang PLN</p>
                 </div>
 
                 <div class="portfolio-grid">
@@ -274,9 +274,9 @@
                         <div class="portfolio-info">
                             <span class="badge-tag">PLN Magang</span>
                             <h3>Dashboard Forecast Susut Energi</h3>
-                            <p>Perancangan UI/UX Dashboard peramalan komponen kWh dan persentase susut energi[cite: 101, 114].</p>
+                            <p>Sistem peramalan otomatis tingkat error 1-2% di 5 wilayah Surabaya Selatan[cite: 90].</p>
                             
-                            <!-- Kolom Tools Software -->
+                            <!-- Kolom Kecil Tools / Software -->
                             <div class="tool-badges">
                                 <span class="tool-badge">R Shiny</span>
                                 <span class="tool-badge">R Studio</span>
@@ -295,9 +295,9 @@
                         <div class="portfolio-info">
                             <span class="badge-tag">PLN Magang</span>
                             <h3>Monitoring Anomali Pelanggan Listrik</h3>
-                            <p>Dashboard pemantauan perilaku konsumsi dan klasifikasi status anomali pelanggan[cite: 101, 115].</p>
+                            <p>Visualisasi real-time OneDrive ke Power BI untuk klasifikasi status pelanggan[cite: 91].</p>
                             
-                            <!-- Kolom Tools Software -->
+                            <!-- Kolom Kecil Tools / Software -->
                             <div class="tool-badges">
                                 <span class="tool-badge">Power BI</span>
                                 <span class="tool-badge">Excel OneDrive</span>
@@ -315,20 +315,18 @@
                         </div>
                         <div class="portfolio-info">
                             <span class="badge-tag">PLN Magang</span>
-                            <h3>Aplikasi Berita Acara Digital PLN</h3>
-                            <p>Pengembangan backend form penginputan data dan alur kerja approval berita acara lapangan[cite: 101, 117].</p>
+                            <h3>Aplikasi Berita Acara & Entry Data Digital</h3>
+                            <p>Platform digital untuk input, approval berjenjang, dan pelaporan berita acara lapangan[cite: 87].</p>
                             
-                            <!-- Kolom Tools Software -->
+                            <!-- Kolom Kecil Tools / Software -->
                             <div class="tool-badges">
-                                <span class="tool-badge">JotForm</span>
+                                <span class="tool-badge">Jotform</span>
                                 <span class="tool-badge">Apps Script</span>
                             </div>
 
                             <span class="click-detail">Project Details <i class="fa-solid fa-arrow-right"></i></span>
                         </div>
                     </div>
-                </div>
-            </section>
 
                     <!-- Project 4: Retail Sales -->
                     <div class="portfolio-card" onclick="openModal('modal-retail')">
@@ -407,7 +405,7 @@
                 <p class="footer-note">&copy; 2026 Fauzi Dwi Aryasatyawan. Built with passion.</p>
             </section>
 
-   <!-- MODAL POPUP DETAIL PROYEK MAGANG PLN -->
+    <!-- MODAL POPUP DETAIL PROYEK & SPACE SCREENSHOT (Bab 4 Laporan Magang) -->
     <div id="projectModal" class="modal-overlay" onclick="closeModalOutside(event)">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
@@ -415,80 +413,74 @@
         </div>
     </div>
 
-    <!-- Modal 1: Dashboard Forecast Susut Energi (Bab 4.1) -->
+    <!-- Konten Modal 1: Dashboard Forecast Susut Energi -->
     <div id="modal-pln-forecast" style="display:none;">
-        <span class="badge-tag">PT PLN (Persero) UP3 Surabaya Selatan — R Shiny</span>
+        <span class="badge-tag">PLN Magang — R Shiny & R Studio</span>
         <h2>Dashboard Forecast Susut Energi</h2>
-        <p class="modal-desc">Merancang desain UI/UX Dashboard Forecast Susut Energi berbasis R Shiny yang memuat panduan penggunaan terstruktur, sidebar navigasi dinamis, halaman input data, papan peringkat error model, hingga visualisasi grafik peramalan[cite: 101, 114].</p>
+        <p class="modal-desc">Sistem analitik berbasis R Shiny yang dirancang untuk menghitung dan memproyeksikan persentase susut energi listrik secara otomatis di 5 wilayah kerja PLN UP3 Surabaya Selatan[cite: 90].</p>
         
-        <!-- Space Screenshot -->
         <div class="modal-screenshot-box">
-            <h4>Screenshot Hasil (Bab 4.1 Laporan Magang):</h4>
+            <h4>Screenshot Hasil Visualisasi (Bab 4.1 Laporan Magang):</h4>
             <div class="screenshot-preview-wrapper">
-                <img src="forecast-screenshot.png" alt="Forecast Screenshot" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                <div class="fallback-img-text" style="display:none;"><i class="fa-solid fa-image"></i><span>Simpan gambar screenshot Bab 4.1 dengan nama 'forecast-screenshot.png'</span></div>
+                <img src="forecast-screenshot.png" alt="Forecast Hasil Visualisasi" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="fallback-img-text" style="display:none;"><i class="fa-solid fa-image"><span>Upload 'forecast-screenshot.png' ke folder project</span></i></div>
             </div>
-            <p class="screenshot-caption">Pratinjau tampilan antarmuka panduan, input data, pemilihan model terbaik, hingga grafik dan tabel rincian forecast[cite: 101].</p>
+            <p class="screenshot-caption">Visualisasi grafik peramalan tren historis komponen kWh dan rentang confidence interval 95%[cite: 47, 51].</p>
         </div>
 
         <div class="modal-features">
-            <h4>Rincian Tugas & Fitur Utama:</h4>
+            <h4>Fitur Utama & Alur Sistem:</h4>
             <ul>
-                <li><strong>Halaman Panduan Penggunaan:</strong> Menyajikan instruksi langkah demi langkah (1-7) beserta tombol unduh template Excel[cite: 119].</li>
-                <li><strong>Pemilihan Model Otomatis:</strong> Mengevaluasi metode ARIMA, FBPN, Hybrid STLF, dan SES serta menampilkan model terbaik berdasarkan nilai MAPE terkecil[cite: 114, 120].</li>
-                <li><strong>Visualisasi Grafik & Confidence Interval:</strong> Menampilkan tren historis 4 komponen kWh serta area keyakinan (ribbon area 95%) untuk proyeksi masa depan[cite: 121, 122].</li>
+                <li><strong>Panduan Penggunaan Terstruktur:</strong> Menu awal interaktif langkah-demi-langkah (1-7) lengkap dengan unduhan template Excel[cite: 49].</li>
+                <li><strong>Pemilihan Model Otomatis:</strong> Menggabungkan metode ARIMA, FBPN, Hybrid STLF, dan SES, serta otomatis menyeleksi model terbaik berdasarkan MAPE terkecil (1-2%)[cite: 45, 90].</li>
             </ul>
         </div>
     </div>
 
-    <!-- Modal 2: Dashboard Monitoring Anomali Pelanggan Listrik (Bab 4.2) -->
+    <!-- Konten Modal 2: Monitoring Anomali Pelanggan -->
     <div id="modal-pln-monitoring" style="display:none;">
-        <span class="badge-tag">PT PLN (Persero) UP3 Surabaya Selatan — Power BI & OneDrive</span>
-        <h2>Dashboard Monitoring Anomali Pelanggan Listrik</h2>
-        <p class="modal-desc">Perancangan UI/UX Dashboard Monitoring Anomali Pelanggan Listrik berbasis Power BI serta perancangan alur pembaruan data real-time menggunakan Excel OneDrive dan Power BI Service[cite: 101, 115].</p>
+        <span class="badge-tag">PLN Magang — Power BI & OneDrive</span>
+        <h2>Monitoring Anomali Pelanggan Listrik</h2>
+        <p class="modal-desc">Dashboard Business Intelligence berbasis Power BI untuk memantau perilaku konsumsi listrik pelanggan serta mendeteksi potensi anomali secara terpadu di wilayah PLN UP3 Surabaya Selatan[cite: 53, 91].</p>
         
-        <!-- Space Screenshot -->
         <div class="modal-screenshot-box">
-            <h4>Screenshot Hasil (Bab 4.2 Laporan Magang):</h4>
+            <h4>Screenshot Hasil Visualisasi (Bab 4.2 Laporan Magang):</h4>
             <div class="screenshot-preview-wrapper">
-                <img src="monitoring-screenshot.png" alt="Monitoring Screenshot" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                <div class="fallback-img-text" style="display:none;"><i class="fa-solid fa-image"></i><span>Simpan gambar screenshot Bab 4.2 dengan nama 'monitoring-screenshot.png'</span></div>
+                <img src="monitoring-screenshot.png" alt="Monitoring Hasil Visualisasi" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="fallback-img-text" style="display:none;"><i class="fa-solid fa-image"><span>Upload 'monitoring-screenshot.png' ke folder project</span></i></div>
             </div>
-            <p class="screenshot-caption">Pratinjau halaman monitoring menyeluruh, kartu KPI status, diagram donat, dan halaman detail investigasi pelanggan[cite: 123, 124].</p>
+            <p class="screenshot-caption">Tampilan halaman monitoring ringkasan KPI, diagram donat status, dan halaman detail investigasi pelanggan[cite: 53, 54].</p>
         </div>
 
         <div class="modal-features">
-            <h4>Rincian Tugas & Fitur Utama:</h4>
+            <h4>Fitur Utama & Alur Sistem:</h4>
             <ul>
-                <li><strong>Halaman Monitoring & Filter Interaktif:</strong> Menyediakan saringan dropdown (Bulan/Tahun, Unit Layanan, Tarif, Klasifikasi, Daya) serta kartu KPI status[cite: 123].</li>
-                <li><strong>Klasifikasi Status Pelanggan:</strong> Mengelompokkan status pelanggan ke dalam kategori Normal, Suspicious, dan Critical berdasarkan Behavior Score[cite: 115, 123].</li>
-                <li><strong>Alur Pembaruan Data Real-Time:</strong> Mekanisme penyegaran otomatis dari file Excel sumber di OneDrive ke semantic model Power BI Service[cite: 115, 125].</li>
+                <li><strong>Halaman Monitoring Menyeluruh:</strong> Dilengkapi saringan interaktif (Bulan/Tahun, Unit Layanan, Tarif, Klasifikasi, Daya) dan kartu KPI status[cite: 53].</li>
+                <li><strong>Klasifikasi Status Pelanggan:</strong> Mengelompokkan status ke dalam kategori Normal, Suspicious, dan Critical berdasarkan Behavior Score[cite: 53, 91].</li>
             </ul>
         </div>
     </div>
 
-    <!-- Modal 3: Aplikasi Berita Acara Digital PLN (Bab 4.3) -->
+    <!-- Konten Modal 3: Aplikasi Berita Acara Digital -->
     <div id="modal-pln-entry" style="display:none;">
-        <span class="badge-tag">PT PLN (Persero) UP3 Surabaya Selatan — Jotform & Apps Script</span>
-        <h2>Aplikasi Berita Acara Digital PLN</h2>
-        <p class="modal-desc">Pembangunan logika sistem (backend) pada Aplikasi Berita Acara Digital PLN yang dikembangkan menggunakan platform Jotform untuk mendigitalisasi proses pencatatan di lapangan[cite: 101, 117].</p>
+        <span class="badge-tag">PLN Magang — Jotform & Google Apps Script</span>
+        <h2>Aplikasi Berita Acara & Entry Data Digital</h2>
+        <p class="modal-desc">Platform digital backend dan antarmuka berbasis Jotform untuk mendigitalisasi proses pencatatan berita acara lapangan yang sebelumnya manual di PLN UP3 Surabaya Selatan[cite: 55, 87].</p>
         
-        <!-- Space Screenshot -->
         <div class="modal-screenshot-box">
-            <h4>Screenshot Hasil (Bab 4.3 Laporan Magang):</h4>
+            <h4>Screenshot Hasil Visualisasi (Bab 4.3 Laporan Magang):</h4>
             <div class="screenshot-preview-wrapper">
-                <img src="entry-screenshot.png" alt="Entry Screenshot" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                <div class="fallback-img-text" style="display:none;"><i class="fa-solid fa-image"></i><span>Simpan gambar screenshot Bab 4.3 dengan nama 'entry-screenshot.png'</span></div>
+                <img src="entry-screenshot.png" alt="Entry Hasil Visualisasi" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="fallback-img-text" style="display:none;"><i class="fa-solid fa-image"><span>Upload 'entry-screenshot.png' ke folder project</span></i></div>
             </div>
-            <p class="screenshot-caption">Pratinjau landing page, form input data petugas & pelanggan, riwayat pencarian BA, serta panel review admin[cite: 126, 130].</p>
+            <p class="screenshot-caption">Tampilan antarmuka form input data lapangan, pencarian data BA, dan status approval admin[cite: 51, 55, 56].</p>
         </div>
 
         <div class="modal-features">
-            <h4>Rincian Tugas & Fitur Utama:</h4>
+            <h4>Fitur Utama & Alur Sistem:</h4>
             <ul>
-                <li><strong>Form Penginputan Data:</strong> Perancangan alur pengisian tanggal, identitas petugas, detail pelanggan, koordinat GPS (latitude/longitude), dan unggah foto bukti[cite: 118].</li>
-                <li><strong>Alur Kerja Persetujuan (Approval):</strong> Logika conditional yang memungkinkan admin mengubah status dokumen menjadi Belum Disetujui, Disetujui, atau Revisi[cite: 118].</li>
-                <li><strong>Pencarian & Pelaporan Real-Time:</strong> Mekanisme penelusuran data berdasarkan IDPEL atau nama pelanggan serta kolom catatan admin[cite: 118, 130].</li>
+                <li><strong>Form Input Lapangan:</strong> Perekaman data petugas, detail pelanggan, koordinat GPS (latitude/longitude), dan widget unggah foto bukti[cite: 51, 52].</li>
+                <li><strong>Workflow Status Approval:</strong> Logika sistem bagi admin untuk mengubah status dokumen menjadi Belum Disetujui, Disetujui, atau Revisi[cite: 55, 56].</li>
             </ul>
         </div>
     </div>
