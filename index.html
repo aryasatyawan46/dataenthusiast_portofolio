@@ -261,82 +261,97 @@
             <section id="projects" class="content-section">
                 <div class="section-header">
                     <h2>My Portfolio</h2>
-                    <p>Klik pada kartu proyek untuk melihat gambaran website, fitur, dan software yang digunakan</p>
+                    <p>Klik pada kartu proyek untuk melihat gambaran website, screenshot hasil, fitur, dan software yang digunakan</p>
                 </div>
 
                 <div class="portfolio-grid">
                     <!-- Project 1: PLN Forecast -->
                     <div class="portfolio-card" onclick="openModal('modal-pln-forecast')">
                         <div class="portfolio-preview-img pln-bg">
-                            <i class="fa-solid fa-bolt fallback-icon"></i>
+                            <img src="forecast-home.png" alt="Dashboard Forecast" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="fallback-preview" style="display:none;"><i class="fa-solid fa-bolt"></i></div>
                         </div>
                         <div class="portfolio-info">
                             <span class="badge-tag">PLN Magang</span>
                             <h3>Dashboard Forecast Susut Energi</h3>
-                            <p><strong>Software:</strong> R Shiny (R Studio)</p>
-                            <p>Sistem peramalan otomatis tingkat error 1-2% di 5 wilayah Surabaya Selatan.</p>
-                            <span class="click-detail">Lihat Fitur & Detail <i class="fa-solid fa-arrow-right"></i></span>
+                            <p>Sistem peramalan otomatis tingkat error 1-2% di 5 wilayah Surabaya Selatan[cite: 1, 90].</p>
+                            <div class="tech-tags">
+                                <span>R Shiny</span><span>R Studio</span><span>Time Series</span>
+                            </div>
+                            <span class="click-detail">Project Details <i class="fa-solid fa-arrow-right"></i></span>
                         </div>
                     </div>
 
                     <!-- Project 2: PLN Monitoring -->
                     <div class="portfolio-card" onclick="openModal('modal-pln-monitoring')">
                         <div class="portfolio-preview-img pln-bg">
-                            <i class="fa-solid fa-triangle-exclamation fallback-icon"></i>
+                            <img src="monitoring-home.png" alt="Monitoring Anomali" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="fallback-preview" style="display:none;"><i class="fa-solid fa-triangle-exclamation"></i></div>
                         </div>
                         <div class="portfolio-info">
                             <span class="badge-tag">PLN Magang</span>
                             <h3>Monitoring Anomali Pelanggan Listrik</h3>
-                            <p><strong>Software:</strong> Power BI & Excel OneDrive</p>
-                            <p>Visualisasi real-time untuk klasifikasi status pelanggan (Normal, Suspicious, Critical).</p>
-                            <span class="click-detail">Lihat Fitur & Detail <i class="fa-solid fa-arrow-right"></i></span>
+                            <p>Visualisasi real-time OneDrive ke Power BI untuk klasifikasi status pelanggan (Normal, Suspicious, Critical)[cite: 1, 91].</p>
+                            <div class="tech-tags">
+                                <span>Power BI</span><span>DAX</span><span>Excel OneDrive</span>
+                            </div>
+                            <span class="click-detail">Project Details <i class="fa-solid fa-arrow-right"></i></span>
                         </div>
                     </div>
 
                     <!-- Project 3: PLN Entry Data -->
                     <div class="portfolio-card" onclick="openModal('modal-pln-entry')">
                         <div class="portfolio-preview-img pln-bg">
-                            <i class="fa-solid fa-file-pen fallback-icon"></i>
+                            <img src="entry-home.png" alt="Aplikasi Berita Acara" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="fallback-preview" style="display:none;"><i class="fa-solid fa-file-pen"></i></div>
                         </div>
                         <div class="portfolio-info">
                             <span class="badge-tag">PLN Magang</span>
                             <h3>Aplikasi Berita Acara & Entry Data Digital</h3>
-                            <p><strong>Software:</strong> Jotform & Google Apps Script</p>
-                            <p>Platform digital untuk input, approval berjenjang, dan pelaporan berita acara lapangan.</p>
-                            <span class="click-detail">Lihat Fitur & Detail <i class="fa-solid fa-arrow-right"></i></span>
+                            <p>Platform digital untuk input, approval berjenjang, dan pelaporan berita acara lapangan[cite: 87].</p>
+                            <div class="tech-tags">
+                                <span>Jotform</span><span>Google Apps Script</span>
+                            </div>
+                            <span class="click-detail">Project Details <i class="fa-solid fa-arrow-right"></i></span>
                         </div>
                     </div>
 
-                    <!-- Project 4: Retail Sales -->
+                    <!-- Project 4: Retail Sales (Dengan Link Web Aktif) -->
                     <div class="portfolio-card" onclick="openModal('modal-retail')">
                         <div class="portfolio-preview-img retail-bg">
-                            <i class="fa-solid fa-shop fallback-icon"></i>
+                            <img src="retail-home.png" alt="Retail Sales" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="fallback-preview" style="display:none;"><i class="fa-solid fa-shop"></i></div>
                         </div>
                         <div class="portfolio-info">
                             <span class="badge-tag">Business Intelligence</span>
                             <h3>Multi-Store Retail Sales Dashboard</h3>
-                            <p><strong>Software:</strong> Power BI</p>
-                            <p>Analisis omzet, margin kotor, diskon promosi, dan akurasi persediaan di 24 gerai.</p>
+                            <p>Analisis omzet, margin kotor, diskon promosi, dan akurasi persediaan di 24 gerai ritel[cite: 1, 94].</p>
+                            <div class="tech-tags">
+                                <span>Power BI</span><span>DAX</span>
+                            </div>
                             <div class="card-action-links" onclick="event.stopPropagation()">
-                                <a href="https://intip.in/DashboardRetailPenjualan" target="_blank" class="link-web">Kunjungi Web <i class="fa-solid fa-external-link"></i></a>
-                                <span class="click-detail" onclick="openModal('modal-retail')">Detail <i class="fa-solid fa-arrow-right"></i></span>
+                                <a href="https://intip.in/DashboardRetailPenjualan" target="_blank" class="link-web">Visit Web <i class="fa-solid fa-external-link"></i></a>
+                                <span class="click-detail" onclick="openModal('modal-retail')">Project Details <i class="fa-solid fa-arrow-right"></i></span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Project 5: Hotel Netherlands -->
+                    <!-- Project 5: Hotel Netherlands (Dengan Link Web Aktif) -->
                     <div class="portfolio-card" onclick="openModal('modal-hotel')">
                         <div class="portfolio-preview-img hotel-bg">
-                            <i class="fa-solid fa-hotel fallback-icon"></i>
+                            <img src="hotel-home.png" alt="Hotel Netherlands" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="fallback-preview" style="display:none;"><i class="fa-solid fa-hotel"></i></div>
                         </div>
                         <div class="portfolio-info">
                             <span class="badge-tag">Tableau Project</span>
                             <h3>Hotel Management in Netherlands</h3>
-                            <p><strong>Software:</strong> Tableau</p>
-                            <p>Visualisasi interaktif lokasi hotel, tipe kamar, rentang harga, dan ulasan di Belanda.</p>
+                            <p>Visualisasi interaktif lokasi hotel, tipe kamar, rentang harga, dan ulasan pelanggan di Belanda[cite: 1, 87].</p>
+                            <div class="tech-tags">
+                                <span>Tableau</span><span>Geospatial</span>
+                            </div>
                             <div class="card-action-links" onclick="event.stopPropagation()">
-                                <a href="https://intip.in/HotelManagementInNetherlands" target="_blank" class="link-web">Kunjungi Web <i class="fa-solid fa-external-link"></i></a>
-                                <span class="click-detail" onclick="openModal('modal-hotel')">Detail <i class="fa-solid fa-arrow-right"></i></span>
+                                <a href="https://intip.in/HotelManagementInNetherlands" target="_blank" class="link-web">Visit Web <i class="fa-solid fa-external-link"></i></a>
+                                <span class="click-detail" onclick="openModal('modal-hotel')">Project Details <i class="fa-solid fa-arrow-right"></i></span>
                             </div>
                         </div>
                     </div>
@@ -372,7 +387,7 @@
                 <p class="footer-note">&copy; 2026 Fauzi Dwi Aryasatyawan. Built with passion.</p>
             </section>
 
-    <!-- MODAL POPUP DETAIL PROYEK -->
+    <!-- MODAL POPUP DETAIL PROYEK & SCREENSHOT HASIL -->
     <div id="projectModal" class="modal-overlay" onclick="closeModalOutside(event)">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
@@ -380,18 +395,26 @@
         </div>
     </div>
 
-    <!-- Konten Detail Modal Proyek -->
+    <!-- Konten Detail & Screenshot Modal -->
     <div id="modal-pln-forecast" style="display:none;">
         <span class="badge-tag">PLN Magang — R Shiny (R Studio)</span>
         <h2>Dashboard Forecast Susut Energi</h2>
-        <p class="modal-desc">Sistem analitik berbasis R Shiny yang dirancang untuk menghitung dan memproyeksikan persentase susut energi listrik secara otomatis di 5 wilayah kerja PLN UP3 Surabaya Selatan.</p>
+        <p class="modal-desc">Sistem analitik berbasis R Shiny yang dirancang untuk menghitung dan memproyeksikan persentase susut energi listrik secara otomatis di 5 wilayah kerja PLN UP3 Surabaya Selatan[cite: 90].</p>
+        
+        <div class="modal-screenshot-box">
+            <h4>Project Screenshots & Visualizations:</h4>
+            <div class="screenshot-preview-wrapper">
+                <img src="forecast-screenshot.png" alt="Forecast Screenshot" onerror="this.style.display='none';">
+            </div>
+            <p class="screenshot-caption">Tampilan grafik peramalan tren historis komponen energi serta rentang confidence interval 95%.</p>
+        </div>
+
         <div class="modal-features">
             <h4>Fitur Utama & Keunggulan Sistem:</h4>
             <ul>
-                <li><strong>Panduan Penggunaan Terstruktur:</strong> Menu awal interaktif langkah-demi-langkah (1-7) lengkap dengan unduhan template Excel.</li>
-                <li><strong>Pemilihan Model Otomatis:</strong> Menggabungkan metode ARIMA, FBPN, Hybrid STLF, dan SES untuk menyeleksi model terbaik dengan MAPE terkecil (1-2%).</li>
-                <li><strong>Visualisasi Grafik & Confidence Interval:</strong> Menampilkan tren historis 4 komponen energi beserta rentang keyakinan (ribbon area 95%)
-                    .</li>
+                <li><strong>Panduan Penggunaan Terstruktur:</strong> Menu awal interaktif langkah-demi-langkah (1-7) lengkap dengan unduhan template Excel[cite: 49].</li>
+                <li><strong>Pemilihan Model Otomatis:</strong> Menggabungkan metode ARIMA, FBPN, Hybrid STLF, dan SES untuk menyeleksi model terbaik dengan MAPE terkecil (1-2%)[cite: 45, 90].</li>
+                <li><strong>Visualisasi Grafik & Confidence Interval:</strong> Menampilkan tren historis 4 komponen energi beserta rentang keyakinan (ribbon area 95%)[cite: 47, 51].</li>
             </ul>
         </div>
     </div>
@@ -399,13 +422,22 @@
     <div id="modal-pln-monitoring" style="display:none;">
         <span class="badge-tag">PLN Magang — Power BI & OneDrive</span>
         <h2>Monitoring Anomali Pelanggan Listrik</h2>
-        <p class="modal-desc">Dashboard Business Intelligence berbasis Power BI untuk memantau perilaku konsumsi listrik pelanggan serta mendeteksi potensi anomali secara terpadu.</p>
+        <p class="modal-desc">Dashboard Business Intelligence berbasis Power BI untuk memantau perilaku konsumsi listrik pelanggan serta mendeteksi potensi anomali secara terpadu[cite: 53, 91].</p>
+        
+        <div class="modal-screenshot-box">
+            <h4>Project Screenshots & Visualizations:</h4>
+            <div class="screenshot-preview-wrapper">
+                <img src="monitoring-screenshot.png" alt="Monitoring Screenshot" onerror="this.style.display='none';">
+            </div>
+            <p class="screenshot-caption">Tampilan halaman monitoring ringkasan KPI dan grafik tren klasifikasi status pelanggan.</p>
+        </div>
+
         <div class="modal-features">
             <h4>Fitur Utama & Keunggulan Sistem:</h4>
             <ul>
-                <li><strong>Filter Interaktif & Kartu KPI:</strong> Saringan berdasarkan Bulan/Tahun, Unit Layanan, Tarif, dan Daya untuk memantau status secara cepat.</li>
-                <li><strong>Klasifikasi Status Otomatis:</strong> Mengelompokkan pelanggan ke dalam kategori Normal, Suspicious, dan Critical berdasarkan Behavior Score.</li>
-                <li><strong>Pembaruan Data Real-Time:</strong> Sinkronisasi otomatis dari OneDrive ke Power BI Service menggunakan fitur refresh semantic model.</li>
+                <li><strong>Filter Interaktif & Kartu KPI:</strong> Saringan berdasarkan Bulan/Tahun, Unit Layanan, Tarif, dan Daya untuk memantau status secara cepat[cite: 53].</li>
+                <li><strong>Klasifikasi Status Otomatis:</strong> Mengelompokkan pelanggan ke dalam kategori Normal, Suspicious, dan Critical berdasarkan Behavior Score[cite: 53, 91].</li>
+                <li><strong>Pembaruan Data Real-Time:</strong> Sinkronisasi otomatis dari OneDrive ke Power BI Service menggunakan fitur refresh semantic model[cite: 46, 55].</li>
             </ul>
         </div>
     </div>
@@ -413,13 +445,22 @@
     <div id="modal-pln-entry" style="display:none;">
         <span class="badge-tag">PLN Magang — Jotform & Google Apps Script</span>
         <h2>Aplikasi Berita Acara & Entry Data Digital</h2>
-        <p class="modal-desc">Platform digital berbasis Jotform dan Google Apps Script untuk menggantikan proses pencatatan berita acara konvensional berbasis kertas menjadi sistem yang terstruktur.</p>
+        <p class="modal-desc">Platform digital berbasis Jotform dan Google Apps Script untuk menggantikan proses pencatatan berita acara konvensional berbasis kertas menjadi sistem yang terstruktur[cite: 87].</p>
+        
+        <div class="modal-screenshot-box">
+            <h4>Project Screenshots & Visualizations:</h4>
+            <div class="screenshot-preview-wrapper">
+                <img src="entry-screenshot.png" alt="Entry Screenshot" onerror="this.style.display='none';">
+            </div>
+            <p class="screenshot-caption">Tampilan antarmuka form penginputan data lapangan dan halaman persetujuan admin.</p>
+        </div>
+
         <div class="modal-features">
             <h4>Fitur Utama & Keunggulan Sistem:</h4>
             <ul>
-                <li><strong>Input Lapangan Terstruktur:</strong> Formulir digital yang mencakup data petugas, detail pelanggan, koordinat GPS (latitude/longitude), dan unggah foto bukti.</li>
-                <li><strong>Approval Berjenjang (Workflow):</strong> Admin dapat meninjau dan mengubah status dokumen menjadi Belum Disetujui, Disetujui, atau Revisi.</li>
-                <li><strong>Catatan Admin & Pemantauan Real-Time:</strong> Petugas dapat memantau status revisi dan catatan admin secara transparan untuk mempercepat tindak lanjut di lapangan.</li>
+                <li><strong>Input Lapangan Terstruktur:</strong> Formulir digital yang mencakup data petugas, detail pelanggan, koordinat GPS, dan unggah foto bukti[cite: 51, 52].</li>
+                <li><strong>Approval Berjenjang (Workflow):</strong> Admin dapat meninjau dan mengubah status dokumen menjadi Belum Disetujui, Disetujui, atau Revisi[cite: 55, 56].</li>
+                <li><strong>Catatan Admin & Pemantauan Real-Time:</strong> Petugas dapat memantau status revisi dan catatan admin secara transparan untuk mempercepat tindak lanjut di lapangan[cite: 53, 55].</li>
             </ul>
         </div>
     </div>
@@ -427,12 +468,21 @@
     <div id="modal-retail" style="display:none;">
         <span class="badge-tag">Business Intelligence — Power BI</span>
         <h2>Multi-Store Retail Sales Dashboard</h2>
-        <p class="modal-desc">Dashboard analitik penjualan komprehensif untuk memantau omzet, margin kotor, diskon promosi, dan akurasi persediaan barang di 24 gerai ritel.</p>
+        <p class="modal-desc">Dashboard analitik penjualan komprehensif untuk memantau omzet, margin kotor, diskon promosi, dan akurasi persediaan barang di 24 gerai ritel[cite: 1, 94].</p>
+        
+        <div class="modal-screenshot-box">
+            <h4>Project Screenshots & Visualizations:</h4>
+            <div class="screenshot-preview-wrapper">
+                <img src="retail-screenshot.png" alt="Retail Screenshot" onerror="this.style.display='none';">
+            </div>
+            <p class="screenshot-caption">Tampilan analitik omzet, margin kotor, dan audit selisih stok gerai ritel.</p>
+        </div>
+
         <div class="modal-features">
             <h4>Fitur Utama & Keunggulan Sistem:</h4>
             <ul>
-                <li><strong>Ringkasan Eksekutif Finansial:</strong> Menampilkan pendapatan bersih, laba kotor, persentase margin, dan biaya retur secara instan.</li>
-                <li><strong>Audit Selisih Stok & SKU:</strong> Membaca selisih stok sistem vs fisik beserta nilai kerugian finansial.</li>
+                <li><strong>Ringkasan Eksekutif Finansial:</strong> Menampilkan pendapatan bersih, laba kotor, persentase margin, dan biaya retur secara instan[cite: 94].</li>
+                <li><strong>Audit Selisih Stok & SKU:</strong> Membaca selisih stok sistem vs fisik beserta nilai kerugian finansial[cite: 94].</li>
                 <li><strong>Link Web Akses Langsung:</strong> <a href="https://intip.in/DashboardRetailPenjualan" target="_blank" style="color:var(--accent-blue);">Buka Tautan Dashboard Retail <i class="fa-solid fa-external-link"></i></a></li>
             </ul>
         </div>
@@ -441,12 +491,21 @@
     <div id="modal-hotel" style="display:none;">
         <span class="badge-tag">Tableau Project</span>
         <h2>Hotel Management in Netherlands</h2>
-        <p class="modal-desc">Visualisasi data geospasial interaktif menggunakan Tableau untuk memetakan lokasi akomodasi hotel, sebaran tipe kamar, rentang harga, hingga ulasan konsumen di Belanda.</p>
+        <p class="modal-desc">Visualisasi data geospasial interaktif menggunakan Tableau untuk memetakan lokasi akomodasi hotel, sebaran tipe kamar, rentang harga, hingga ulasan konsumen di Belanda[cite: 1, 87].</p>
+        
+        <div class="modal-screenshot-box">
+            <h4>Project Screenshots & Visualizations:</h4>
+            <div class="screenshot-preview-wrapper">
+                <img src="hotel-screenshot.png" alt="Hotel Screenshot" onerror="this.style.display='none';">
+            </div>
+            <p class="screenshot-caption">Tampilan peta geospasial interaktif persebaran hotel dan analisis harga di Belanda.</p>
+        </div>
+
         <div class="modal-features">
             <h4>Fitur Utama & Keunggulan Sistem:</h4>
             <ul>
-                <li><strong>Peta Geografis Interaktif:</strong> Memetakan titik lokasi hotel di berbagai kota besar di Belanda secara real-time.</li>
-                <li><strong>Analisis Harga & Rating:</strong> Grafik batang dinamis untuk membandingkan tarif harga dan skor ulasan.</li>
+                <li><strong>Peta Geografis Interaktif:</strong> Memetakan titik lokasi hotel di berbagai kota besar di Belanda secara real-time[cite: 87].</li>
+                <li><strong>Analisis Harga & Rating:</strong> Grafik batang dinamis untuk membandingkan tarif harga dan skor ulasan[cite: 87].</li>
                 <li><strong>Link Web Akses Langsung:</strong> <a href="https://intip.in/HotelManagementInNetherlands" target="_blank" style="color:var(--accent-blue);">Buka Tautan Dashboard Hotel <i class="fa-solid fa-external-link"></i></a></li>
             </ul>
         </div>

@@ -50,3 +50,84 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+/* Styling Kartu Portfolio */
+.portfolio-preview-img {
+    width: 100%;
+    height: 180px;
+    background: rgba(15, 23, 42, 0.6);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(208, 230, 253, 0.15);
+}
+
+.portfolio-preview-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.portfolio-card:hover .portfolio-preview-img img {
+    transform: scale(1.05);
+}
+
+.fallback-preview {
+    font-size: 2.8rem;
+    color: var(--accent-blue);
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 10px 0;
+}
+
+.tech-tags span {
+    font-size: 0.72rem;
+    background: rgba(208, 230, 253, 0.1);
+    color: var(--accent-blue);
+    padding: 3px 8px;
+    border-radius: 4px;
+    border: 1px solid rgba(208, 230, 253, 0.2);
+}
+
+/* Styling Kotak Screenshot di Modal */
+.modal-screenshot-box {
+    margin: 20px 0;
+}
+
+.modal-screenshot-box h4 {
+    color: var(--text-beige);
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.screenshot-preview-wrapper {
+    width: 100%;
+    height: 240px;
+    background: #0a1022;
+    border: 1px solid rgba(208, 230, 253, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screenshot-preview-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.screenshot-caption {
+    font-size: 0.82rem;
+    color: var(--accent-blue);
+    margin-top: 6px;
+    font-style: italic;
+}
