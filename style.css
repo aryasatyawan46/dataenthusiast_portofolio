@@ -902,3 +902,77 @@ body {
     .timeline-card-split { grid-template-columns: 1fr; }
     .hero-massive-title { font-size: 4rem; }
 }
+
+/* Styling Grup Kategori Skills Terpisah */
+.skill-category-group {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(208, 230, 253, 0.12);
+    border-radius: 12px;
+    padding: 12px 15px;
+}
+
+.skill-cat-title {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-beige);
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+/* Penyesuaian Timeline Single (Tanpa Foto Slot) */
+.timeline-card-single {
+    background: rgba(10, 20, 50, 0.7);
+    border: 1px solid rgba(208, 230, 253, 0.2);
+    border-radius: 16px;
+    padding: 25px;
+    backdrop-filter: blur(12px);
+}
+
+.timeline-info-full h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: var(--text-beige);
+}
+
+.timeline-info-full h4 {
+    font-size: 0.88rem;
+    color: var(--accent-blue);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.timeline-info-full ul {
+    list-style-type: disc;
+    padding-left: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.timeline-info-full li {
+    font-size: 0.88rem;
+    color: var(--accent-blue);
+    line-height: 1.5;
+}
+
+/* Jarak Spasi Antara Judul dan Deskripsi di Modal Pop-up */
+.detail-section-block {
+    margin-bottom: 22px;
+}
+
+.detail-section-block h4 {
+    color: var(--text-beige);
+    font-size: 1rem;
+    margin-bottom: 10px; /* Jarak bawah judul */
+    border-left: 3px solid var(--accent-blue);
+    padding-left: 8px;
+}
+
+.modal-desc-spaced {
+    color: var(--accent-blue);
+    font-size: 0.92rem;
+    line-height: 1.7;
+    margin-top: 5px; /* Jarak atas deskripsi */
+}
