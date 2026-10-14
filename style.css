@@ -976,3 +976,21 @@ body {
     line-height: 1.7;
     margin-top: 5px; /* Jarak atas deskripsi */
 }
+/* Menyesuaikan warna scrollbar modal agar selaras dengan background pop-up */
+.modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background: #0f172a; /* Warna latar belakang modal */
+    border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: rgba(208, 230, 253, 0.25); /* Warna pegangan scrollbar */
+    border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-blue);
+}
