@@ -247,7 +247,8 @@ body {
 .profile-circle-large img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain; /* Mengubah dari cover agar foto tampil pas dan tidak terpotong */
+    background: rgba(208, 230, 253, 0.05); /* Menyesuaikan latar belakang area kosong jika proporsi foto berbeda */
 }
 
 .fallback-avatar {
@@ -478,7 +479,9 @@ body {
 
 .timeline-photo-slot {
     width: 100%;
-    height: 160px;
+    aspect-ratio: 4 / 5; /* Memaksa rasio foto menjadi 4:5 (1080x1350 px) */
+    height: auto; /* Mengikuti rasio aspect-ratio secara otomatis */
+    min-height: 250px; /* Menjaga tinggi minimal agar terlihat jelas dan proporsional */
     border: 2px dashed rgba(208, 230, 253, 0.3);
     border-radius: 12px;
     background: rgba(208, 230, 253, 0.03);
@@ -491,7 +494,19 @@ body {
 .timeline-photo-slot img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Menjaga isi foto memenuhi seluruh area rasio 4:5 tanpa distorsi */
+}
+
+.timeline-card-split {
+    background: rgba(10, 20, 50, 0.7);
+    border: 1px solid rgba(208, 230, 253, 0.2);
+    border-radius: 16px;
+    padding: 25px;
+    backdrop-filter: blur(12px);
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr; /* Membagi porsi teks dan foto 4:5 dengan seimbang */
+    gap: 25px;
+    align-items: center;
 }
 
 .fallback-slot {
