@@ -1027,3 +1027,32 @@ body {
     background: var(--accent-blue);
     animation: neonPulse 2s infinite ease-in-out;
 }
+/* Pastikan animasi keyframes terdefinisi dengan benar */
+@keyframes neonPulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px var(--accent-blue), 0 0 10px var(--accent-blue), 0 0 15px var(--accent-blue);
+    }
+    50% {
+        transform: scale(1.4);
+        box-shadow: 0 0 12px var(--accent-blue), 0 0 25px var(--accent-blue), 0 0 35px var(--accent-blue);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 5px var(--accent-blue), 0 0 10px var(--accent-blue), 0 0 15px var(--accent-blue);
+    }
+}
+
+/* Timpa aturan .timeline-dot dengan menggunakan !important pada animasi */
+.timeline-dot {
+    position: absolute !important;
+    left: -37px !important;
+    top: 5px !important;
+    width: 14px !important;
+    height: 14px !important;
+    border-radius: 50% !important;
+    background: var(--accent-blue) !important;
+    transform-origin: center center;
+    animation: neonPulse 1.8s infinite ease-in-out !important;
+    will-change: transform, box-shadow;
+}
