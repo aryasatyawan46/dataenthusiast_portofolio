@@ -1000,3 +1000,30 @@ body {
 .modal-content::-webkit-scrollbar-thumb:hover {
     background: var(--accent-blue);
 }
+/* Animasi Denyut Neon Bergerak Membesar dan Memperkecil */
+@keyframes neonPulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px var(--accent-blue), 0 0 10px var(--accent-blue), 0 0 15px var(--accent-blue);
+    }
+    50% {
+        transform: scale(1.4);
+        box-shadow: 0 0 10px var(--accent-blue), 0 0 20px var(--accent-blue), 0 0 30px var(--accent-blue);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 5px var(--accent-blue), 0 0 10px var(--accent-blue), 0 0 15px var(--accent-blue);
+    }
+}
+
+/* Memperbarui kelas .timeline-dot agar menerapkan efek animasi neon hidup */
+.timeline-dot {
+    position: absolute;
+    left: -37px;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--accent-blue);
+    animation: neonPulse 2s infinite ease-in-out;
+}
