@@ -230,10 +230,11 @@ body {
     color: var(--text-beige);
 }
 
+/* REVISI UKURAN FOTO PROFIL DIPECILKAN */
 .profile-circle-large {
-    width: 260px;
-    height: 260px;
-    border-radius: 20px;
+    width: 200px !important;
+    height: 240px !important;
+    border-radius: 16px;
     border: 2px solid var(--accent-blue);
     overflow: hidden;
     box-shadow: 0 0 25px var(--primary-glow);
@@ -241,19 +242,44 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin: 0 auto 15px auto;
 }
 
 .profile-circle-large img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Mengubah dari cover agar foto tampil pas dan tidak terpotong */
-    background: rgba(208, 230, 253, 0.05); /* Menyesuaikan latar belakang area kosong jika proporsi foto berbeda */
+    object-fit: cover;
+    background: rgba(208, 230, 253, 0.05);
 }
 
 .fallback-avatar {
     font-size: 4rem;
     color: var(--accent-blue);
+}
+
+/* REVISI TOMBOL DOWNLOAD CV DIPECILKAN */
+.btn-download-cv {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: rgba(208, 230, 253, 0.15);
+    color: var(--accent-blue);
+    border: 1px solid var(--accent-blue);
+    padding: 10px 18px !important;
+    border-radius: 10px;
+    font-size: 0.8rem !important;
+    font-weight: 600;
+    text-decoration: none;
+    width: auto !important;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px var(--primary-glow);
+}
+
+.btn-download-cv:hover {
+    background: var(--accent-blue);
+    color: var(--bg-main);
 }
 
 .about-right-col {
@@ -373,29 +399,6 @@ body {
     display: inline-block;
 }
 
-.btn-download-cv {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    background: rgba(208, 230, 253, 0.15);
-    color: var(--accent-blue);
-    border: 1px solid var(--accent-blue);
-    padding: 12px 20px;
-    border-radius: 12px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    text-decoration: none;
-    width: 100%;
-    transition: all 0.3s ease;
-    box-shadow: 0 0 15px var(--primary-glow);
-}
-
-.btn-download-cv:hover {
-    background: var(--accent-blue);
-    color: var(--bg-main);
-}
-
 /* EXPERIENCE & TIMELINE */
 .experience-category-title {
     font-size: 1.25rem;
@@ -444,7 +447,7 @@ body {
     padding: 25px;
     backdrop-filter: blur(12px);
     display: grid;
-    grid-template-columns: 1.3fr 0.9fr;
+    grid-template-columns: 1.4fr 0.8fr;
     gap: 25px;
     align-items: center;
 }
@@ -479,9 +482,9 @@ body {
 
 .timeline-photo-slot {
     width: 100%;
-    aspect-ratio: 4 / 5; /* Memaksa rasio foto menjadi 4:5 (1080x1350 px) */
-    height: auto; /* Mengikuti rasio aspect-ratio secara otomatis */
-    min-height: 250px; /* Menjaga tinggi minimal agar terlihat jelas dan proporsional */
+    aspect-ratio: 4 / 5;
+    height: auto;
+    min-height: 250px;
     border: 2px dashed rgba(208, 230, 253, 0.3);
     border-radius: 12px;
     background: rgba(208, 230, 253, 0.03);
@@ -494,19 +497,7 @@ body {
 .timeline-photo-slot img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Menjaga isi foto memenuhi seluruh area rasio 4:5 tanpa distorsi */
-}
-
-.timeline-card-split {
-    background: rgba(10, 20, 50, 0.7);
-    border: 1px solid rgba(208, 230, 253, 0.2);
-    border-radius: 16px;
-    padding: 25px;
-    backdrop-filter: blur(12px);
-    display: grid;
-    grid-template-columns: 1.4fr 0.8fr; /* Membagi porsi teks dan foto 4:5 dengan seimbang */
-    gap: 25px;
-    align-items: center;
+    object-fit: cover;
 }
 
 .fallback-slot {
@@ -695,9 +686,9 @@ body {
     background: #0f172a;
     border: 1px solid rgba(208, 230, 253, 0.3);
     border-radius: 20px;
-    max-width: 650px;
+    max-width: 950px !important;
     width: 100%;
-    padding: 35px;
+    padding: 40px;
     position: relative;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
     animation: modalPop 0.3s ease;
@@ -781,7 +772,7 @@ body {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(208, 230, 253, 0.2);
     color: var(--text-beige);
-    padding: 10px 22px;
+    padding: 12px 25px;
     border-radius: 12px;
     text-decoration: none;
     font-weight: 500;
@@ -849,7 +840,7 @@ body {
     line-height: 1.4;
 }
 
-/* 5 Space Screenshot di Modal */
+/* REVISI GALERI SCREENSHOT MODAL: FIT UKURAN GAMBAR & HAPUS TEKS KANAN */
 .modal-screenshots-container {
     margin-top: 20px;
     border-top: 1px solid rgba(208, 230, 253, 0.2);
@@ -871,32 +862,31 @@ body {
 }
 
 .space-img-box {
-    width: 100%;
-    height: 160px;
-    background: #070d1d;
-    border: 1px dashed rgba(208, 230, 253, 0.3);
-    border-radius: 6px;
+    width: 100% !important;
+    height: auto !important;
+    background: #050b16;
+    border: 1px solid rgba(208, 230, 253, 0.25);
+    border-radius: 12px;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
+    padding: 0;
 }
 
 .space-img-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 520px;
+    object-fit: contain !important;
+    display: block;
+    margin: 0 auto;
 }
 
-.fallback-txt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-    color: var(--accent-blue);
-    font-size: 0.75rem;
+.space-img-box .fallback-txt {
+    display: none !important;
 }
 
 .space-desc {
@@ -980,7 +970,7 @@ body {
 .detail-section-block h4 {
     color: var(--text-beige);
     font-size: 1rem;
-    margin-bottom: 10px; /* Jarak bawah judul */
+    margin-bottom: 10px;
     border-left: 3px solid var(--accent-blue);
     padding-left: 8px;
 }
@@ -989,50 +979,24 @@ body {
     color: var(--accent-blue);
     font-size: 0.92rem;
     line-height: 1.7;
-    margin-top: 5px; /* Jarak atas deskripsi */
+    margin-top: 5px;
 }
-/* Menyesuaikan warna scrollbar modal agar selaras dengan background pop-up */
+
+/* Scrollbar Modal Styling */
 .modal-content::-webkit-scrollbar {
     width: 8px;
 }
 
 .modal-content::-webkit-scrollbar-track {
-    background: #0f172a; /* Warna latar belakang modal */
+    background: #0f172a;
     border-radius: 10px;
 }
 
 .modal-content::-webkit-scrollbar-thumb {
-    background: rgba(208, 230, 253, 0.25); /* Warna pegangan scrollbar */
+    background: rgba(208, 230, 253, 0.25);
     border-radius: 10px;
 }
 
 .modal-content::-webkit-scrollbar-thumb:hover {
     background: var(--accent-blue);
-}
-/* Memperlebar modal pop-up agar area galeri screenshot menjadi sangat luas dan lega */
-.modal-content {
-    max-width: 950px !important;
-    padding: 40px;
-}
-
-/* Memperbesar ukuran tinggi kotak gambar galeri screenshot */
-.space-img-box {
-    width: 100%;
-    height: 480px !important;
-    background: #070_1d;
-    border: 1px solid rgba(208, 230, 253, 0.25);
-    border-radius: 12px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin-bottom: 12px;
-}
-
-.space-img-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain !important; /* Menjaga agar gambar dashboard tampil utuh */
-    background: #050b16;
 }
