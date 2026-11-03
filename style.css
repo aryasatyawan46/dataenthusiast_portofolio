@@ -132,6 +132,31 @@ body {
     margin-bottom: 10px;
 }
 
+/* EFEK NEON MENYALA (GLOW IN THE DARK) */
+@keyframes titleNeonGlow {
+    0% {
+        color: var(--text-beige);
+        text-shadow: 0 0 10px rgba(208, 230, 253, 0.4),
+                     0 0 20px rgba(208, 230, 253, 0.3),
+                     0 0 30px rgba(208, 230, 253, 0.2),
+                     0 0 40px rgba(22, 38, 96, 0.5);
+    }
+    50% {
+        color: #ffffff;
+        text-shadow: 0 0 15px var(--accent-blue),
+                     0 0 30px var(--accent-blue),
+                     0 0 45px var(--accent-blue),
+                     0 0 60px rgba(208, 230, 253, 0.6);
+    }
+    100% {
+        color: var(--text-beige);
+        text-shadow: 0 0 10px rgba(208, 230, 253, 0.4),
+                     0 0 20px rgba(208, 230, 253, 0.3),
+                     0 0 30px rgba(208, 230, 253, 0.2),
+                     0 0 40px rgba(22, 38, 96, 0.5);
+    }
+}
+
 .hero-massive-title {
     font-family: 'Cinzel', serif;
     font-size: 6.5rem;
@@ -140,8 +165,7 @@ body {
     letter-spacing: 2px;
     margin-bottom: 20px;
     text-transform: uppercase;
-    color: var(--text-beige);
-    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: titleNeonGlow 3s infinite ease-in-out;
 }
 
 .hero-role-divider {
@@ -230,7 +254,6 @@ body {
     color: var(--text-beige);
 }
 
-/* REVISI UKURAN FOTO PROFIL DIPECILKAN */
 .profile-circle-large {
     width: 200px !important;
     height: 240px !important;
@@ -257,7 +280,6 @@ body {
     color: var(--accent-blue);
 }
 
-/* REVISI TOMBOL DOWNLOAD CV DIPECILKAN */
 .btn-download-cv {
     display: inline-flex;
     align-items: center;
@@ -422,15 +444,32 @@ body {
     margin-bottom: 40px;
 }
 
+@keyframes neonPulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px var(--accent-blue), 0 0 10px var(--accent-blue), 0 0 15px var(--accent-blue);
+    }
+    50% {
+        transform: scale(1.4);
+        box-shadow: 0 0 12px var(--accent-blue), 0 0 25px var(--accent-blue), 0 0 35px var(--accent-blue);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 5px var(--accent-blue), 0 0 10px var(--accent-blue), 0 0 15px var(--accent-blue);
+    }
+}
+
 .timeline-dot {
-    position: absolute;
-    left: -37px;
-    top: 5px;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background: var(--accent-blue);
-    box-shadow: 0 0 10px var(--accent-blue);
+    position: absolute !important;
+    left: -37px !important;
+    top: 5px !important;
+    width: 14px !important;
+    height: 14px !important;
+    border-radius: 50% !important;
+    background: var(--accent-blue) !important;
+    transform-origin: center center;
+    animation: neonPulse 1.8s infinite ease-in-out !important;
+    will-change: transform, box-shadow;
 }
 
 .timeline-date {
@@ -790,7 +829,6 @@ body {
 
 .footer-note { color: var(--accent-blue); font-size: 0.85rem; }
 
-/* Spasi Contact & Tools */
 .contact-spaced-section {
     margin-top: 140px;
     padding-top: 60px;
@@ -815,13 +853,13 @@ body {
 }
 
 .detail-section-block {
-    margin-bottom: 18px;
+    margin-bottom: 22px;
 }
 
 .detail-section-block h4 {
     color: var(--text-beige);
-    font-size: 0.98rem;
-    margin-bottom: 4px;
+    font-size: 1rem;
+    margin-bottom: 10px;
     border-left: 3px solid var(--accent-blue);
     padding-left: 8px;
 }
@@ -840,7 +878,6 @@ body {
     line-height: 1.4;
 }
 
-/* REVISI GALERI SCREENSHOT MODAL: FIT UKURAN GAMBAR & HAPUS TEKS KANAN */
 .modal-screenshots-container {
     margin-top: 20px;
     border-top: 1px solid rgba(208, 230, 253, 0.2);
@@ -885,10 +922,6 @@ body {
     margin: 0 auto;
 }
 
-.space-img-box .fallback-txt {
-    display: none !important;
-}
-
 .space-desc {
     font-size: 0.8rem;
     color: var(--accent-blue);
@@ -908,7 +941,6 @@ body {
     .hero-massive-title { font-size: 4rem; }
 }
 
-/* Styling Grup Kategori Skills Terpisah */
 .skill-category-group {
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid rgba(208, 230, 253, 0.12);
@@ -925,7 +957,6 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* Penyesuaian Timeline Single (Tanpa Foto Slot) */
 .timeline-card-single {
     background: rgba(10, 20, 50, 0.7);
     border: 1px solid rgba(208, 230, 253, 0.2);
@@ -962,19 +993,6 @@ body {
     line-height: 1.5;
 }
 
-/* Jarak Spasi Antara Judul dan Deskripsi di Modal Pop-up */
-.detail-section-block {
-    margin-bottom: 22px;
-}
-
-.detail-section-block h4 {
-    color: var(--text-beige);
-    font-size: 1rem;
-    margin-bottom: 10px;
-    border-left: 3px solid var(--accent-blue);
-    padding-left: 8px;
-}
-
 .modal-desc-spaced {
     color: var(--accent-blue);
     font-size: 0.92rem;
@@ -982,7 +1000,6 @@ body {
     margin-top: 5px;
 }
 
-/* Scrollbar Modal Styling */
 .modal-content::-webkit-scrollbar {
     width: 8px;
 }
@@ -999,60 +1016,4 @@ body {
 
 .modal-content::-webkit-scrollbar-thumb:hover {
     background: var(--accent-blue);
-}
-/* Animasi Denyut Neon Bergerak Membesar dan Memperkecil */
-@keyframes neonPulse {
-    0% {
-        transform: scale(1);
-        box-shadow: 0 0 5px var(--accent-blue), 0 0 10px var(--accent-blue), 0 0 15px var(--accent-blue);
-    }
-    50% {
-        transform: scale(1.4);
-        box-shadow: 0 0 10px var(--accent-blue), 0 0 20px var(--accent-blue), 0 0 30px var(--accent-blue);
-    }
-    100% {
-        transform: scale(1);
-        box-shadow: 0 0 5px var(--accent-blue), 0 0 10px var(--accent-blue), 0 0 15px var(--accent-blue);
-    }
-}
-
-/* Memperbarui kelas .timeline-dot agar menerapkan efek animasi neon hidup */
-.timeline-dot {
-    position: absolute;
-    left: -37px;
-    top: 5px;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background: var(--accent-blue);
-    animation: neonPulse 2s infinite ease-in-out;
-}
-/* Pastikan animasi keyframes terdefinisi dengan benar */
-@keyframes neonPulse {
-    0% {
-        transform: scale(1);
-        box-shadow: 0 0 5px var(--accent-blue), 0 0 10px var(--accent-blue), 0 0 15px var(--accent-blue);
-    }
-    50% {
-        transform: scale(1.4);
-        box-shadow: 0 0 12px var(--accent-blue), 0 0 25px var(--accent-blue), 0 0 35px var(--accent-blue);
-    }
-    100% {
-        transform: scale(1);
-        box-shadow: 0 0 5px var(--accent-blue), 0 0 10px var(--accent-blue), 0 0 15px var(--accent-blue);
-    }
-}
-
-/* Timpa aturan .timeline-dot dengan menggunakan !important pada animasi */
-.timeline-dot {
-    position: absolute !important;
-    left: -37px !important;
-    top: 5px !important;
-    width: 14px !important;
-    height: 14px !important;
-    border-radius: 50% !important;
-    background: var(--accent-blue) !important;
-    transform-origin: center center;
-    animation: neonPulse 1.8s infinite ease-in-out !important;
-    will-change: transform, box-shadow;
 }
