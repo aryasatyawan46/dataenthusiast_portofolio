@@ -134,21 +134,21 @@ body {
 
 /* EFEK NEON MENYALA (GLOW IN THE DARK) */
 @keyframes titleNeonGlow {
-    0% {
+    30% {
         color: var(--text-beige);
         text-shadow: 0 0 10px rgba(208, 230, 253, 0.4),
                      0 0 20px rgba(208, 230, 253, 0.3),
                      0 0 30px rgba(208, 230, 253, 0.2),
                      0 0 40px rgba(22, 38, 96, 0.5);
     }
-    30% {
+    50% {
         color: #ffffff;
         text-shadow: 0 0 15px var(--accent-blue),
                      0 0 30px var(--accent-blue),
                      0 0 45px var(--accent-blue),
                      0 0 60px rgba(208, 230, 253, 0.6);
     }
-    50% {
+    70% {
         color: var(--text-beige);
         text-shadow: 0 0 10px rgba(208, 230, 253, 0.4),
                      0 0 20px rgba(208, 230, 253, 0.3),
