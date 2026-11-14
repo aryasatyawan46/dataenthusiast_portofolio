@@ -7,6 +7,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styling khusus untuk shape metadata di bawah judul modal proyek */
+        .modal-meta-shapes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 12px 0 22px 0;
+        }
+        .meta-shape {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            color: #e2e8f0;
+        }
+        .meta-shape strong {
+            color: #93c5fd;
+            font-weight: 600;
+        }
+        .meta-shape.tool-shape {
+            background: rgba(59, 130, 246, 0.16);
+            border-color: rgba(59, 130, 246, 0.4);
+            color: #bfdbfe;
+            font-weight: 600;
+        }
+    </style>
 </head>
 <body>
 
@@ -225,7 +256,7 @@
                         <div class="timeline-date">Apr 2024 – Nov 2024</div>
                         <div class="timeline-card-split">
                             <div class="timeline-info">
-                                <h3>Kepala Divisi Konten Kreator</h3>
+                                <h3>Head of Content Creator Division</h3>
                                 <h4>VOKASI ITS FESTIVAL 2024 – Institut Teknologi Sepuluh Nopember</h4>
                                 <ul>
                                     <li>Led a creative team comprising videographers, photographers, and editors in designing and executing digital media campaign strategies for the event.</li>
@@ -487,26 +518,30 @@
 
     <!-- Konten Modal 1: Dashboard Forecast Susut Energi -->
     <div id="modal-pln-forecast" style="display:none;">
-        <span class="badge-tag">PLN Magang — R Shiny & R Studio</span>
         <h2>Dashboard Forecast Susut Energi</h2>
+        <div class="modal-meta-shapes">
+            <span class="meta-shape"><strong>Period / Company:</strong> PT PLN (Persero) UP3 SURABAYA SELATAN</span>
+            <span class="meta-shape"><strong>Role:</strong> Data Analyst Internship</span>
+            <span class="meta-shape tool-shape"><i class="fa-solid fa-wrench"></i> Tools: Rshiny</span>
+        </div>
         
         <div class="detail-section-block">
-            <h4>Fungsi Utama</h4>
-            <p class="modal-desc-spaced">Menghitung otomatis persentase kehilangan (susut) energi listrik di 5 wilayah Surabaya Selatan (ULP NGAGEL, ULP RUNGKUT, ULP DARMO PERMAI, ULP GEDANGAN, ULP DUKUH KUPANG).</p>
+            <h4>Primary Function</h4>
+            <p class="modal-desc-spaced">Automatically calculates the percentage of electrical energy loss in 5 areas of South Surabaya (ULP Ngagel, ULP Rungkut, ULP Darmo Permai, ULP Gedangan, and ULP Dukuh Kupang).</p>
         </div>
 
         <div class="detail-section-block">
-            <h4>Keunggulan Sistem</h4>
-            <p class="modal-desc-spaced">Menggabungkan 4 data transaksi energi dan otomatis memilih metode prediksi dengan tingkat error paling kecil (hanya 1-2%).</p>
+            <h4>System Advantages</h4>
+            <p class="modal-desc-spaced">Integrates four types of energy transaction data and automatically selects the prediction method with the lowest error rate (only 1–2%).</p>
         </div>
 
         <div class="detail-section-block">
-            <h4>Tujuan</h4>
-            <p class="modal-desc-spaced">Menggantikan proses rekapitulasi data manual yang rumit menjadi sistem digital yang cepat dan terstandardisasi.</p>
+            <h4>Objective</h4>
+            <p class="modal-desc-spaced">To replace the complex manual data recapitulation process with a fast, standardized digital system.</p>
         </div>
 
         <div class="modal-screenshots-container">
-            <h4>Project Screenshots & Visualizations (6 Galeri)</h4>
+            <h4>Project Gallery</h4>
             <div class="space-item"><div class="space-img-box"><img src="1.PLN/Picture1_01.jpg" alt="SC1" onerror="this.style.display='none';"></div><p class="space-desc"><strong>Galeri 1:</strong> Tampilan Halaman Panduan Penggunaan langkah 1-7.</p></div>
             <div class="space-item"><div class="space-img-box"><img src="1.PLN/Picture2_02.jpg" alt="SC2" onerror="this.style.display='none';"></div><p class="space-desc"><strong>Galeri 2:</strong> Tampilan Struktur Navigasi Sidebar dan Filter Komponen.</p></div>
             <div class="space-item"><div class="space-img-box"><img src="1.PLN/Picture3_03.jpg" alt="SC3" onerror="this.style.display='none';"></div><p class="space-desc"><strong>Galeri 3:</strong> Tampilan Halaman Input Data Excel dengan Tabel Interaktif.</p></div>
@@ -518,27 +553,31 @@
 
     <!-- Konten Modal 2: Monitoring Anomali Pelanggan Listrik -->
     <div id="modal-pln-monitoring" style="display:none;">
-        <span class="badge-tag">PLN Magang — Power BI & OneDrive</span>
         <h2>Monitoring Anomali Pelanggan Listrik</h2>
+        <div class="modal-meta-shapes">
+            <span class="meta-shape"><strong>Period / Company:</strong> PT PLN (Persero) UP3 SURABAYA SELATAN</span>
+            <span class="meta-shape"><strong>Role:</strong> Data Analyst Internship</span>
+            <span class="meta-shape tool-shape"><i class="fa-solid fa-chart-column"></i> PowerBi</span>
+            <span class="meta-shape tool-shape"><i class="fa-solid fa-cloud"></i> One Drive</span>
+        </div>
         
         <div class="detail-section-block">
-            <h4>Project Description</h4>
-            <p class="modal-desc-spaced">Dashboard Power BI untuk memantau perilaku konsumsi listrik dan mendeteksi potensi anomali secara terpadu.</p>
+            <h4>Primary Function</h4>
+            <p class="modal-desc-spaced">To monitor and classify the electricity usage status of all customers across five areas in South Surabaya (ULP Ngagel, ULP Rungkut, ULP Darmo Permai, ULP Gedangan, and ULP Dukuh Kupang) into three categories—Normal, Suspicious, and Critical—based on an automated behavior score.</p>
         </div>
+
         <div class="detail-section-block">
-            <h4>Fungsi Utama</h4>
-            <p class="modal-desc-spaced">Mengklasifikasikan status pemakaian listrik pelanggan (Normal, Suspicious, Critical) berdasarkan behavior score.</p>
+            <h4>System Advantages</h4>
+            <p class="modal-desc-spaced">Integrates a comprehensive overview of all customers with detailed, individual-level investigations into a single dashboard. It features real-time data updates (automatically refreshed from OneDrive to Power BI) without requiring any changes to the system design.</p>
         </div>
+
         <div class="detail-section-block">
-            <h4>Keunggulan Sistem</h4>
-            <ul class="modal-list">
-                <li>Pemisahan level informasi monitoring menyeluruh dan detail per pelanggan.</li>
-                <li>Pembaruan data real-time via Excel OneDrive.</li>
-            </ul>
+            <h4>Objective</h4>
+            <p class="modal-desc-spaced">To replace manual electricity usage anomaly detection processes with an automated, visual system, thereby accelerating the identification of customers with potential anomalies for follow-up action by field personnel.</p>
         </div>
 
         <div class="modal-screenshots-container">
-            <h4>Project Screenshots & Visualizations (3 Galeri)</h4>
+            <h4>Project Gallery</h4>
             <div class="space-item"><div class="space-img-box"><img src="2.PLN/Picture7_07.jpg" alt="SC1" onerror="this.style.display='none';"></div><p class="space-desc"><strong>Galeri 1:</strong> Tampilan Halaman Monitoring & KPI Utama.</p></div>
             <div class="space-item"><div class="space-img-box"><img src="2.PLN/Picture8_08.jpg" alt="SC2" onerror="this.style.display='none';"></div><p class="space-desc"><strong>Galeri 2:</strong> Trend Klasifikasi Status Pelanggan.</p></div>
             <div class="space-item"><div class="space-img-box"><img src="2.PLN/Picture9_03.jpg" alt="SC3" onerror="this.style.display='none';"></div><p class="space-desc"><strong>Galeri 3:</strong> Detail Analisis Perilaku Konsumsi.</p></div>
@@ -547,27 +586,30 @@
 
     <!-- Konten Modal 3: Aplikasi Berita Acara Digital PLN -->
     <div id="modal-pln-entry" style="display:none;">
-        <span class="badge-tag">PLN Magang — Jotform & Apps Script</span>
         <h2>Aplikasi Berita Acara Digital PLN</h2>
+        <div class="modal-meta-shapes">
+            <span class="meta-shape"><strong>Period / Company:</strong> PT PLN (Persero) UP3 SURABAYA SELATAN</span>
+            <span class="meta-shape"><strong>Role:</strong> Data Analyst Internship</span>
+            <span class="meta-shape tool-shape"><i class="fa-solid fa-file-pen"></i> Tools: JotForm</span>
+        </div>
         
         <div class="detail-section-block">
-            <h4>Project Description</h4>
-            <p class="modal-desc-spaced">Platform digital backend dan antarmuka berbasis Jotform untuk mendigitalisasi pencatatan berita acara lapangan.</p>
+            <h4>Primary Function</h4>
+            <p class="modal-desc-spaced">Provides a platform for the digital input, approval, and reporting of official records (minutes/reports).</p>
         </div>
+
         <div class="detail-section-block">
-            <h4>Fungsi Utama</h4>
-            <p class="modal-desc-spaced">Menggantikan rekapitulasi konvensional berbasis kertas menjadi sistem digital terpusat.</p>
+            <h4>Key Features</h4>
+            <p class="modal-desc-spaced">An integrated administrative system with real-time document status tracking to facilitate prompt follow-up.</p>
         </div>
+
         <div class="detail-section-block">
-            <h4>Keunggulan Sistem</h4>
-            <ul class="modal-list">
-                <li>Formulir lapangan dengan koordinat GPS dan unggah foto.</li>
-                <li>Workflow approval berjenjang oleh admin.</li>
-            </ul>
+            <h4>Objective</h4>
+            <p class="modal-desc-spaced">To transition from conventional, paper-based record-keeping to a digital format, thereby enhancing the efficiency of field teams, accelerating bureaucratic processes, minimizing the risk of document loss, and enabling transparent oversight of reporting history.</p>
         </div>
 
         <div class="modal-screenshots-container">
-            <h4>Project Screenshots & Visualizations</h4>
+            <h4>Project Gallery</h4>
             <div class="space-item"><div class="space-img-box"><img src="3.PLN/01.jpeg" alt="SC1" onerror="this.style.display='none';"></div><p class="space-desc"><strong>Galeri Utama:</strong> Tampilan Halaman Berita Acara.</p></div>
             <div class="space-item"><div class="space-img-box"><img src="3.PLN/01_1.jpeg" alt="SC2" onerror="this.style.display='none';"></div><p class="space-desc"><strong>Galeri 2:</strong> Detail Tampilan 1.</p></div>
             <div class="space-item"><div class="space-img-box"><img src="3.PLN/01_2.jpeg" alt="SC3" onerror="this.style.display='none';"></div><p class="space-desc"><strong>Galeri 3:</strong> Detail Tampilan 2.</p></div>
@@ -605,7 +647,7 @@
         </div>
 
         <div class="modal-screenshots-container">
-            <h4>Project Screenshots & Visualizations</h4>
+            <h4>Project Gallery</h4>
             <div class="space-item"><div class="space-img-box"><img src="4.BI/01.jpeg" alt="SC1" onerror="this.style.display='none';"></div><p class="space-desc"><strong>Galeri 1:</strong> Tampilan Utama Dashboard Multi-Store Retail.</p></div>
         </div>
     </div>
@@ -632,7 +674,7 @@
         </div>
 
         <div class="modal-screenshots-container">
-            <h4>Project Screenshots & Visualizations (2 Galeri)</h4>
+            <h4>Project Gallery</h4>
             <div class="space-item"><div class="space-img-box"><img src="5.Kuliah Tableau/01.jpeg" alt="SC1" onerror="this.style.display='none';"></div><p class="space-desc"><strong>Galeri 1:</strong> Peta Geospasial & Sebaran Lokasi Hotel.</p></div>
             <div class="space-item"><div class="space-img-box"><img src="5.Kuliah Tableau/02.jpeg" alt="SC2" onerror="this.style.display='none';"></div><p class="space-desc"><strong>Galeri 2:</strong> Analisis Harga dan Ulasan Konsumen.</p></div>
         </div>
@@ -660,7 +702,7 @@
         </div>
 
         <div class="modal-screenshots-container">
-            <h4>Project Screenshots & Visualizations (2 Galeri)</h4>
+            <h4>Project Gallery</h4>
             <div class="space-item"><div class="space-img-box"><img src="7. Kuliah PowerBI/01.jpeg" alt="SC1" onerror="this.style.display='none';"></div><p class="space-desc"><strong>Galeri 1:</strong> Tampilan Utama Tren Perubahan Iklim.</p></div>
             <div class="space-item"><div class="space-img-box"><img src="7. Kuliah PowerBI/02.jpeg" alt="SC2" onerror="this.style.display='none';"></div><p class="space-desc"><strong>Galeri 2:</strong> Analisis Produktivitas Hasil Pertanian.</p></div>
         </div>
@@ -687,7 +729,7 @@
         </div>
 
         <div class="modal-screenshots-container">
-            <h4>Project Screenshots & Visualizations (3 Galeri)</h4>
+            <h4>Project Gallery</h4>
             <div class="space-item"><div class="space-img-box"><img src="6.Kuliah Looker/01.jpeg" alt="SC1" onerror="this.style.display='none';"></div><p class="space-desc"><strong>Galeri 1:</strong> Tampilan Utama Dashboard Looker.</p></div>
             <div class="space-item"><div class="space-img-box"><img src="6.Kuliah Looker/02.jpeg" alt="SC2" onerror="this.style.display='none';"></div><p class="space-desc"><strong>Galeri 2:</strong> Detail Analisis & Visualisasi Halaman Berikutnya.</p></div>
             <div class="space-item"><div class="space-img-box"><img src="6.Kuliah Looker/03.jpeg" alt="SC3" onerror="this.style.display='none';"></div><p class="space-desc"><strong>Galeri 3:</strong> Peta Sebaran & Laporan Geospasial.</p></div>
