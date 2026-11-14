@@ -37,6 +37,22 @@
             color: #bfdbfe;
             font-weight: 600;
         }
+        /* Perbaikan kerapian pada section Certification agar tidak tertutup dock navigasi */
+        #certification .cert-box-modern {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 24px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+        #certification .cert-box-modern i {
+            font-size: 2.5rem;
+            color: #93c5fd;
+            flex-shrink: 0;
+        }
     </style>
 </head>
 <body>
@@ -462,19 +478,13 @@
                                 <span class="tool-pill">Data Studio</span>
                             </div>
 
-<div class="card-action-links" onclick="event.stopPropagation()">
-                                <a href="https://intip.in/DashboardRainInAustralia" target="_blank" class="link-web">Visit Web <i class="fa-solid fa-external-link"></i></a>
-                                <span class="click-detail" onclick="openModal('modal-hotel')">Details <i class="fa-solid fa-arrow-right"></i></span>
-                            </div>
-                        </div>
-                    </div>
-
-
                             <div class="card-action-links" onclick="event.stopPropagation()">
-                                <span class="click-detail" onclick="openModal('modal-looker')">Project Details <i class="fa-solid fa-arrow-right"></i></span>
+                                <a href="https://intip.in/DashboardRainInAustralia" target="_blank" class="link-web">Visit Web <i class="fa-solid fa-external-link"></i></a>
+                                <span class="click-detail" onclick="openModal('modal-looker')">Details <i class="fa-solid fa-arrow-right"></i></span>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </section>
 
