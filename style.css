@@ -453,7 +453,7 @@ body {
         transform: scale(1.4);
         box-shadow: 0 0 12px var(--accent-blue), 0 0 25px var(--accent-blue), 0 0 35px var(--accent-blue);
     }
-    75% {
+    25% {
         transform: scale(1);
         box-shadow: 0 0 5px var(--accent-blue), 0 0 10px var(--accent-blue), 0 0 15px var(--accent-blue);
     }
